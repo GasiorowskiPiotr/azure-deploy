@@ -1,0 +1,37 @@
+{
+  "name": "azure-deploy",
+  "version": "0.0.1",
+  "description": "Deploy SPA files to Azure resources to be picked up by Azure CDN",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "Azure",
+    "CDN",
+    "Deployment",
+    "SPA"
+  ],
+  "author": "Piotr Gąsiorowski <gasiorowski.piotr@gmail.com> (http://piotrek.developin.cloud)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "@types/glob": "^5.0.30",
+    "@types/node": "^7.0.4",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "azure-arm-resource": "^1.6.1-preview",
+    "azure-arm-website": "^0.11.5",
+    "azure-storage": "^2.0.0",
+    "glob": "^7.1.1"
+  },
+  "bin": {
+    "deploy-to-storage": "dist/blob-storage/index.js",
+    "deploy-to-webapp": "dist/app-service/index.js"
+  }
+}
