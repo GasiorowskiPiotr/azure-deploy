@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- "7"
+- "6"
+- "5"
+- "4"
+- "0.12"
+- "0.10"
+- "node"
+before_script:
+- npm install -g npm
+- npm install
+script: npm run build
+deploy:
+  provider: npm
+  email: gasiorowski.piotr@gmail.com
+  api_key:
+    secure: us8ZFhEd3nTtbpSzWUf6t6/vFfZhPVNpwy++4lMrpbr5JLpry86ZqDHaQjzQiK7ZWuOPUpqNznNZwTr9CzNVg/vJwuWEl4synw8EOntf0cKdhOCJK0S8EgVyXP62As0KiZUEZe2xcdGAu0fhUxfO0WwrklmueqlyFS081Wcfi0BTZGMnJ1fbe8BIaKQ+UHbQzkMrma0TmuLGnznrvWDSvYsTWtw9jQwp9Qe8p10r+K2RXyGVXDnyCHm2axPbMTA0cXC4GavWx/5xtuf/WYwvCu2JvYOyGbPUrAcIiSXMDn5PYLfgZT8uOjjHuj4lnGeszJUKKE6WFRPSe6UH3YPl5jfw1FWsajblK+c5W5DYH6IueL8hBJHRQFmraTZ5aSniUKEjUXX3eM5/rjGxAMH91B5DV7ZUHeHVANNWMyTqwklG0GLDYYYfrqreb6yDH1y9gdcAkhQ680Oe1ucnwj2mP9PLOU7AtVrrGVTS4+BOTc1shskP+oaj4gJ7lhrAclAkNbii2BdqoPUAwi6VDxCMF1ZstmzRSAllAMS2dHzcgXtVU9dBWW5pPDAbV1YZgqPxVOdvLGl9G/4KfUo+mRRhC+oLFr7L3yDhV7n30H6ki/PWjmde3yG2mb2JzrMSs7YCPp0lq2N/8RIqMUZiGer0xbIL41dMOeZ5bcYzTViYPyo=
+  on:
+    tags: true
+    repo: GasiorowskiPiotr/azure-deploy
