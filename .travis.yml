@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- "7"
-- "6"
-- "5"
-- "4"
-- "0.12"
-- "0.10"
-- "node"
+- '7'
+- '6'
+- '5'
+- '4'
+- '0.12'
+- '0.10'
+- node
 before_script:
 - npm install -g npm
 - npm install
@@ -15,7 +15,7 @@ deploy:
   provider: npm
   email: gasiorowski.piotr@gmail.com
   api_key:
-    secure: us8ZFhEd3nTtbpSzWUf6t6/vFfZhPVNpwy++4lMrpbr5JLpry86ZqDHaQjzQiK7ZWuOPUpqNznNZwTr9CzNVg/vJwuWEl4synw8EOntf0cKdhOCJK0S8EgVyXP62As0KiZUEZe2xcdGAu0fhUxfO0WwrklmueqlyFS081Wcfi0BTZGMnJ1fbe8BIaKQ+UHbQzkMrma0TmuLGnznrvWDSvYsTWtw9jQwp9Qe8p10r+K2RXyGVXDnyCHm2axPbMTA0cXC4GavWx/5xtuf/WYwvCu2JvYOyGbPUrAcIiSXMDn5PYLfgZT8uOjjHuj4lnGeszJUKKE6WFRPSe6UH3YPl5jfw1FWsajblK+c5W5DYH6IueL8hBJHRQFmraTZ5aSniUKEjUXX3eM5/rjGxAMH91B5DV7ZUHeHVANNWMyTqwklG0GLDYYYfrqreb6yDH1y9gdcAkhQ680Oe1ucnwj2mP9PLOU7AtVrrGVTS4+BOTc1shskP+oaj4gJ7lhrAclAkNbii2BdqoPUAwi6VDxCMF1ZstmzRSAllAMS2dHzcgXtVU9dBWW5pPDAbV1YZgqPxVOdvLGl9G/4KfUo+mRRhC+oLFr7L3yDhV7n30H6ki/PWjmde3yG2mb2JzrMSs7YCPp0lq2N/8RIqMUZiGer0xbIL41dMOeZ5bcYzTViYPyo=
+    secure: rHrIQqcx5WdsD2xbjhcuAggJ87ZRSexadSCAd2ph7Yibjc27WLL2DZFy+H0ZSIlWhiQH+TkEXffe+iqEGiTfZ3k5N9UWOBJhbST4m2NUaLDAic6AH53orXy6o+XdXRJMEoUIr6Hi849O3OIazXupgcLYt/7/obz9osBOGydCNIMsA6LTYhy36D7k29K6WTCXtMDthXPOaCCZGyd8cO+EGg2mPPi5PBmb6filnIgqXS3fQIigwbNSKxUNOhmnSeDA/RibYYgbqMVneUAR6JimJ+n1ulXItZusceRxGe4rGwFyxSNWYKv0x7TEo4kpYcwlUBte4XFF0kOP57m2ksqAwFnXWzknotro7pMPbG41yAScVmOfE4FA23ah0+oe8AI8gX6Bl1WiqPYz+v1t5Lx+REE+UAW+fNqZYcXzZbIKtuH1H58Jgvi1I5Gq+cI6466f3+h8aoMSdxduBkrpwpIKCeo4uXghJeQJXJkoTY8EfgVZcXnVokOxTdyg7I8LP1uhFk5hyS6XqJM6X3OfcYITk/myGHdZHGHOHBnUEH2RAcRLT+AtFaFlI41ikdS+9WhTBR1K+lwHi3XElioZOpMoBV1Xolw06Mky5XrVnnCrBGtiCxgK8/t2d10jS5/2Dhg4WA9IYAhS8IVP6A66o7VXX1H3q0qAtm4JJZ26PCYSZwk=
   on:
     tags: true
     repo: GasiorowskiPiotr/azure-deploy
