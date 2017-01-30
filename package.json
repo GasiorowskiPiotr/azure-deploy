@@ -1,6 +1,6 @@
 {
   "name": "azure-cdn-deploy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Deploy SPA files to Azure resources to be picked up by Azure CDN",
   "main": "index.js",
   "scripts": {
